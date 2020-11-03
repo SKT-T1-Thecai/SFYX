@@ -34,7 +34,7 @@ public class OGanalyse{
         stack.add(c);
         L.add(c);
         System.out.println("I"+c);
-        while(pos<str.length-2)
+        while(pos<str.length-4)
         {
             c = str[pos];
             if(stack.isEmpty())
