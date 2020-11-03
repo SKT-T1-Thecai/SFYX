@@ -34,8 +34,9 @@ public class OGanalyse{
         stack.add(c);
         L.add(c);
         System.out.println("I"+c);
-        while(pos<str.length-4)
+        while(pos<str.length-2)
         {
+          //  System.out.println(L);
             c = str[pos];
             if(stack.isEmpty())
             {
@@ -48,6 +49,8 @@ public class OGanalyse{
                 int x,y;
                 x=getIndex(stack.get(stack.size()-1));
                 y=getIndex(c);
+                if(x==100) System.out.println(stack.get(stack.size()-1));
+                if(y==100) System.out.println(c);
                 if(judge[x][y]==1)
                 {
                     L= flashBack(L);
@@ -78,7 +81,7 @@ public class OGanalyse{
         while(true)
         {
             L=flashBack(L);
-
+          //  System.out.println(L);
 
              if(L==null)
             {
