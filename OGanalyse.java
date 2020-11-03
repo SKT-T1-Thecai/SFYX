@@ -116,6 +116,7 @@ public class OGanalyse{
             l=l.subList(0,l.size()-3);
             l.add('N');
             stack.remove(stack.size()-1);
+            stack.remove(stack.size()-1);
             return l;
         }
         return null;
