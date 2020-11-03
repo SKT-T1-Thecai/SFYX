@@ -6,11 +6,11 @@ import java.util.*;
 public class OGanalyse{
     // + * i ( )
     static int[][] judge = {
-            {1,-1,-1,-1,1},
-            {1,1,-1,-1,1},
-            {1,1,0,0,1},
-            {-1,-1,-1,0,-1},
-            {1,1,0,0,1},
+            {1,  -1,  -1,  -1,   1},
+            {1,   1,  -1,  -1,   1},
+            {1,   1,   0,   0,   1},
+            {-1, -1,  -1,   -1,  -1},
+            {1,   1,   0,   0,   1},
 
     };
     public static int getIndex(char c)
@@ -39,7 +39,6 @@ public class OGanalyse{
             c = str[pos];
             if(stack.isEmpty())
             {
-                assert L != null;
                 L.add(c);
                 stack.add(c);
                 System.out.println("I"+c);
@@ -91,8 +90,7 @@ public class OGanalyse{
                 System.out.println("R");
                 break;
             }
-            else if(L!=null)
-                System.out.println("R");
+            else System.out.println("R");
         }
 
 
@@ -136,6 +134,7 @@ public class OGanalyse{
             {
                 str[pos++]=(char)buf[i];
             }
+           // System.out.println(str.length);
             analyse(str);
 
 
