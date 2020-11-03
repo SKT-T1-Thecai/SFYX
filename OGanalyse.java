@@ -49,8 +49,11 @@ public class OGanalyse{
                 int x,y;
                 x=getIndex(stack.get(stack.size()-1));
                 y=getIndex(c);
-                if(x==100) System.out.println(stack.get(stack.size()-1));
-                if(y==100) System.out.println(c);
+                  if(x==100||y==100)
+                {
+                    System.out.println("E");
+                    return;
+                }
                 if(judge[x][y]==1)
                 {
                     L= flashBack(L);
