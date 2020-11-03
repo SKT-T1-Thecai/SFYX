@@ -124,7 +124,7 @@ public class OGanalyse{
     }
     public static void main(String[] args) throws IOException {
         String Path="D:\\IDEA projects\\work10_9\\test.txt";
-       // Path = args[0];
+        Path = args[0];
         File  file=new File(Path);
         FileInputStream f=new FileInputStream(file);
         byte[] buf = new byte[4096];
